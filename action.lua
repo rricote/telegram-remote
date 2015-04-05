@@ -6,7 +6,7 @@ function on_msg_receive (msg)
 	str:gsub(".",function(c) table.insert(t,c) end)
 	if (t[1] == '$') then
 		str = string.sub(str, 2)
-		foo = os.capture(str)
+		foo = os.capture("cd ~; " .. str)
 		send_msg (msg.to.print_name, foo, ok_cb, false)
 	end
 	--[[en caso de querer ejecutar un comando sin recibir
