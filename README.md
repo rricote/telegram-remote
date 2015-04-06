@@ -6,9 +6,9 @@ Instalación
 -
 
 Clonar el repositorio:
-> git clone https://github.com/rricote/telegram-remote.git tg
+> git clone https://github.com/rricote/telegram-remote.git .telegram-remote
 
-> cd tg
+> cd .telegram-remote
 
 Ejecutar install.sh:
 
